@@ -15,7 +15,69 @@
     <string name="menu_send">Send</string>
 
     <string name="my_name">Jean Claude Mugenzi</string>
-    <string name="my_dob">11-10-1989</string>
+    <string name="my_dob">Date of birth: 11-10-1989</string>
     <string name="my_profession">Software Developer</string>
     <string name="my_description">Enthusiastic Full Stack Java Developer with 4 years of experience leading projects through all phases of software development life cycle while implementing latest technologies. Design systems according to OOP standards as well as Java programming principles for frontend and backend applications. Skilled in implementing technologies such as Java, Java EE, JSP, AJAX, RESTful, PrimeFaces, MySQL, and PostgreSQL. Experienced in implementing projects with design patterns, web services, and latest frameworks in financial and commercial business domains. </string>
+    <string name="my_phone">Date of birth: 11-10-1989</string>
+    <string name="my_email">Email: jmugenzi@mum.edu</string>
+    <string name="my_twitter">Twitter: \@claudemugenzi</string>
+    <string name="my_facebook">Facebook: Jean Claude Mugenzi</string>
+    <string name="my_linkedin">Linkedin: https://www.linkedin.com/in/jean-claude-mugenzi-452663130</string>
+    <string name="my_instagram">Instagram: /@claudemugenzi</string>
+
+    <string name="my_address">Address: 1000 North 4th Street, MR#229. Building 141, Room 131. Fairfield, Iowa, United State of America.</string>
+    <string name="about_me">Key skills and Experience: Bachelor\'s Degree of Science in Information Technology, 5 years of professional experience in software development using Java Technologies and 1 year as assistant lecturer in C programming, Java and Web Technology.</string>
+    <string name="objective">Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in jQuery, Databases, Java, Spring Boot, and Play Framework. Strong engineering professional with a Bachelor\'s degree focused in Information Technology from Adventist University of Central Africa.</string>
+
+    <string name="skills">Programming Languages: Java, C++, C#.
+Software Development Environment/Framework: Hibernate, Spring, Java Server Faces, Primefaces, ZK, Node.js, AngularJS, Etc.
+Databases: PostgreSql, MySQL, Sql Server, Oracle, LDAP, MongoDB.
+Tools: Eclipse, Netbeans, Enterprise Architect, SonarCube, Jenkins, SVN, JMeter.
+Platforms: Windows, Linux, MacOs.
+</string>
+    <string name="firstJob">A.	RWANDA MINISTRY OF FINANCE AND ECONOMIC PLANNING,
+From June 2017 up to now.
+</string>
+    <string name="secondJob">B.	4B TECHNOLOGY LIMITED, From June 2014 up to 2017.
+</string>
+    <string name="project1">1.	School Data Management System (SDMS)</string>
+    <string name="project2">2.	EJO HEZA – Long Term Saving Scheme (LTSS)</string>
+    <string name="project3">3.	Integrated Financial Management Information System (IFMIS)</string>
+    <string name="responsibility">•	Designed and implemented the user interfaces (UI).
+•	Designed, documented and developed system functionalities such as:
+1.	User management module (user role, user permissions, allowed menus, allowed action).
+2.	Accounting module (Account management, Balance management, Chart of Account).
+3.	Payment module (Transaction Management, integration with banks and mobile network operators).
+4.	Agent and Intermediary management (Registration, profile).
+5.	Agent Commission module.
+6.	Pre-payment deposit module.
+7.	Subscriber Benefit claim module.
+8.	Benefit Payment Module.
+
+•	Performed Unit Tests.
+•	Used: JAVA, JavaScript, HTML, CSS, Ajax, jQuery, Windows and Linux, Eclipse IDE, Hibernate and Spring Framework, Java Server Faces and Primefaces, PostgreSQL, MongoDB, LDAP, TomCat, Nginx, SonarCube, Jenkins, SVN, JMeter.
+</string>
+
+    <string name="design">1. Design</string>
+    <string name="uml">UML 2.0	I am experienced in visualize, specify, construct and document software using UML 2.0 language.
+Tools	Enterprise Architect 11 and Rational Rose 7.</string>
+
+    <string name="programming">2. Computer Programming languages, Frameworks and Tools</string>
+    <string name="programmingSkills">Server-Side Development with Java	Experienced in developing web based software applications using JSP, Servlets, Java Server Faces2, Struts2, Core Spring Framework 2, Primefaces and Apache Shiro.
+Client-side development languages and techniques	JavaScript, HTML5, CSS3, Ajax jQuery.
+Tools	Eclipse and NetBeans for software development.
+ 	SonarCube and Jenkins for code quality review and software testing.
+ 	Apache Subversion often abbreviated SVN for teamwork sharing and maintain current and historical versions of source code.
+</string>
+    <string name="db">3. Database Management Systems (DBMS)</string>
+    <string name="dbSkills">Experience in creation and administration of relational databases using Oracle 11g, PostgreSQL9 and MySQL5.</string>
+    <string name="graduate">
+    Maharishi University of Management (MUM), Master of Computer Science. 2019, Fairfield, Iowa, United State of America.
+</string>
+    <string name="undergraduate">
+    Adventist University of Central Africa (AUCA), Bachelor of Information Technology. 2014, Masoro, Kigali, Rwanda.
+</string>
+    <string name="highschool">
+    Ecole Des Science Byimana, Advances Level in Mathematics and Physics. 2008, Byimana, Muhanga, Rwanda.
+</string>
 </resources>

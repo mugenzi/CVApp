@@ -9,7 +9,6 @@ import com.example.cvapp.R
 import com.example.cvapp.ui.slideshow.SlideshowViewModel
 
 class ContactFragment : Fragment() {
-    private lateinit var homeViewModel: SlideshowViewModel
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

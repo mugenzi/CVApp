@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.cvapp.R
 import com.example.cvapp.ui.personal.ContactFragment
+import com.example.cvapp.ui.personal.EducationFragment
 import com.example.cvapp.ui.personal.PersonalInfoFragment
 import com.example.cvapp.ui.personal.WorkFragment
 
@@ -41,26 +42,26 @@ class GalleryFragment : Fragment() {
         btnWork = root.findViewById(R.id.work) as Button
 
         btnHome.setOnClickListener {
-            var toast = Toast.makeText(context, "Home Clicked", Toast.LENGTH_LONG)
+            var toast = Toast.makeText(context, "Home Clicked", Toast.LENGTH_SHORT)
             toast.setGravity(Gravity.CENTER, 0, 0)
             toast.show()
             home()
         }
 
         btnAboutMe.setOnClickListener {
-            var toast = Toast.makeText(context, "About Me Clicked", Toast.LENGTH_LONG)
+            var toast = Toast.makeText(context, "Education Clicked", Toast.LENGTH_SHORT)
             toast.setGravity(Gravity.CENTER, 0, 0)
             toast.show()
-            aboutMe()
+            education()
         }
 
         btnWork.setOnClickListener {
-            var toast = Toast.makeText(context, "Work Clicked", Toast.LENGTH_LONG)
+            var toast = Toast.makeText(context, "Work Clicked", Toast.LENGTH_SHORT)
             toast.setGravity(Gravity.CENTER, 0, 0)
             toast.show()
-            work()
+            experience()
         }
-
+        home()
         return root
     }
 
@@ -75,22 +76,15 @@ class GalleryFragment : Fragment() {
         tx.commit()
     }
 
-    private fun aboutMe() {
+    private fun education() {
         tx = fmanager.beginTransaction()
-        tx.replace(R.id.frame1, ContactFragment())
+        tx.replace(R.id.frame1, EducationFragment())
         tx.commit()
     }
 
-    private fun work() {
+    private fun experience() {
         tx = fmanager.beginTransaction()
         tx.replace(R.id.frame1, WorkFragment())
         tx.commit()
     }
-
-    private fun contact() {
-        tx = fmanager.beginTransaction()
-        tx.replace(R.id.frame1, ContactFragment())
-        tx.commit()
-    }
-
 }
