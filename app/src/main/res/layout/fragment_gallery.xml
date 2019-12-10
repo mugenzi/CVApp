@@ -12,32 +12,37 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/personal"
+            android:id="@+id/btnHome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.33"
             android:text="Personal" />
 
-
         <Button
-            android:id="@+id/education"
+            android:id="@+id/aboutMe"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.33"
             android:text="Education" />
 
         <Button
+            android:id="@+id/work"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.33"
-            android:text="Experience" android:id="@+id/work"/>
+            android:text="Other" />
+
     </LinearLayout>
 
     <FrameLayout
         android:id="@+id/frame1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.8"></FrameLayout>
+        android:layout_weight="0.8">
+        <include layout="@layout/fragment_about_me" />
+    </FrameLayout>
+
+
 
     <TextView
         android:layout_width="match_parent"

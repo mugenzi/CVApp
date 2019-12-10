@@ -8,9 +8,14 @@
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
+    <string name="menu_gallery">About Me</string>
+    <string name="menu_slideshow">Work</string>
+    <string name="menu_tools">Contact</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+
+    <string name="my_name">Jean Claude Mugenzi</string>
+    <string name="my_dob">11-10-1989</string>
+    <string name="my_profession">Software Developer</string>
+    <string name="my_description">Enthusiastic Full Stack Java Developer with 4 years of experience leading projects through all phases of software development life cycle while implementing latest technologies. Design systems according to OOP standards as well as Java programming principles for frontend and backend applications. Skilled in implementing technologies such as Java, Java EE, JSP, AJAX, RESTful, PrimeFaces, MySQL, and PostgreSQL. Experienced in implementing projects with design patterns, web services, and latest frameworks in financial and commercial business domains. </string>
 </resources>

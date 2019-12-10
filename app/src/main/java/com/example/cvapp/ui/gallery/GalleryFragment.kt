@@ -1,7 +1,6 @@
 package com.example.cvapp.ui.gallery
 
 import android.app.Activity
-import android.app.Person
 import android.os.Bundle
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -13,60 +12,53 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import androidx.lifecycle.ViewModelProviders
 import com.example.cvapp.R
+import com.example.cvapp.ui.personal.ContactFragment
 import com.example.cvapp.ui.personal.PersonalInfoFragment
 import com.example.cvapp.ui.personal.WorkFragment
 
 
+@Suppress("DEPRECATION")
 class GalleryFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
     lateinit var fmanager: FragmentManager
     lateinit var tx: FragmentTransaction
     lateinit var myContext: FragmentActivity
-    lateinit var btnPersonal: Button
-    lateinit var btnEducational: Button
+    lateinit var btnHome: Button
+    lateinit var btnAboutMe: Button
     lateinit var btnWork: Button
+    lateinit var btnContact: Button
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        galleryViewModel =
-            ViewModelProviders.of(this).get(GalleryViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_gallery, container, false)
-//        val textView: TextView = root.findViewById(R.id.text_gallery)
-        /* galleryViewModel.text.observe(this, Observer {
-             //            textView.text = it
-         })
-         tx = childFragmentManager.beginTransaction()     */
-
         fmanager = myContext.supportFragmentManager
-        btnPersonal = root.findViewById(R.id.personal) as Button
-        btnEducational = root.findViewById(R.id.education) as Button
+        btnHome = root.findViewById(R.id.btnHome) as Button
+        btnAboutMe = root.findViewById(R.id.aboutMe) as Button
         btnWork = root.findViewById(R.id.work) as Button
 
-        btnPersonal.setOnClickListener {
-            var toast = Toast.makeText(context, "Clicked", Toast.LENGTH_LONG)
+        btnHome.setOnClickListener {
+            var toast = Toast.makeText(context, "Home Clicked", Toast.LENGTH_LONG)
             toast.setGravity(Gravity.CENTER, 0, 0)
             toast.show()
-            personal(it) // Call to set the Date from DataPicker
+            home()
         }
 
-        btnEducational.setOnClickListener {
-            var toast = Toast.makeText(context, "Clicked", Toast.LENGTH_LONG)
+        btnAboutMe.setOnClickListener {
+            var toast = Toast.makeText(context, "About Me Clicked", Toast.LENGTH_LONG)
             toast.setGravity(Gravity.CENTER, 0, 0)
             toast.show()
-            education(it) // Call to set the Date from DataPicker
+            aboutMe()
         }
 
         btnWork.setOnClickListener {
-            var toast = Toast.makeText(context, "Clicked", Toast.LENGTH_LONG)
+            var toast = Toast.makeText(context, "Work Clicked", Toast.LENGTH_LONG)
             toast.setGravity(Gravity.CENTER, 0, 0)
             toast.show()
-            work(it) // Call to set the Date from DataPicker
+            work()
         }
 
         return root
@@ -77,28 +69,28 @@ class GalleryFragment : Fragment() {
         super.onAttach(activity)
     }
 
-    private fun personal(view: View) {
+    private fun home() {
         tx = fmanager.beginTransaction()
-        //tx.add(R.id.frame1, GalleryFragment())
-        // Commit the fragment transaction
-        //tx.commit()
         tx.replace(R.id.frame1, PersonalInfoFragment())
         tx.commit()
     }
 
-    private fun education(view: View) {
+    private fun aboutMe() {
         tx = fmanager.beginTransaction()
-        // when the user selects the Home button, we are replacing the HomeFragment
+        tx.replace(R.id.frame1, ContactFragment())
+        tx.commit()
+    }
+
+    private fun work() {
+        tx = fmanager.beginTransaction()
         tx.replace(R.id.frame1, WorkFragment())
         tx.commit()
     }
 
-    fun work(view: View) {
+    private fun contact() {
         tx = fmanager.beginTransaction()
-        // when the user selects the Home button, we are replacing the HomeFragment
-        tx.replace(R.id.frame1, WorkFragment())
+        tx.replace(R.id.frame1, ContactFragment())
         tx.commit()
     }
-
 
 }
